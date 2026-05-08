@@ -38,8 +38,8 @@ export const metadata: Metadata = {
       'Complete brokerage infrastructure and multi-asset trading solutions.'
   },
   icons: {
-    icon: '/logo-icon.png',
-    apple: '/logo-icon.png'
+    icon: '/logo.png',
+    apple: '/logo.png'
   }
 };
 
