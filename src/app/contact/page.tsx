@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -63,106 +64,10 @@ export default function ContactPage() {
           </div>
 
           <div className="lg:col-span-7">
-            <form
-              className="surface-card grid gap-5 p-7 md:p-9"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              name="contact"
-              action="/contact/?success=1"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <p className="hidden">
-                <label>
-                  Don&apos;t fill this out: <input name="bot-field" />
-                </label>
-              </p>
-
-              <div className="grid gap-5 md:grid-cols-2">
-                <Field label="Full name" name="name" required />
-                <Field label="Work email" name="email" type="email" required />
-              </div>
-
-              <div className="grid gap-5 md:grid-cols-2">
-                <Field label="Company" name="company" />
-                <Field label="Country / jurisdiction" name="country" />
-              </div>
-
-              <div>
-                <label className="block text-xs uppercase tracking-[0.18em] text-brand-mist/60">
-                  I&apos;m interested in
-                </label>
-                <select
-                  name="interest"
-                  className="mt-2 w-full rounded-md border border-white/10 bg-white/[0.02] px-3.5 py-2.5 text-sm text-brand-mist focus:border-brand-cyan focus:outline-none"
-                  defaultValue="full-stack"
-                >
-                  <option value="full-stack">The complete platform</option>
-                  <option value="trading">Trading platforms</option>
-                  <option value="dealer">Dealer systems</option>
-                  <option value="crm">CRM</option>
-                  <option value="portals">Client / IB portals</option>
-                  <option value="pamm-copy">PAMM &amp; Copy Trading</option>
-                  <option value="website">Brokerage website</option>
-                  <option value="other">Something else</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs uppercase tracking-[0.18em] text-brand-mist/60">
-                  Tell us about your project
-                </label>
-                <textarea
-                  name="message"
-                  rows={5}
-                  required
-                  className="mt-2 w-full rounded-md border border-white/10 bg-white/[0.02] px-3.5 py-3 text-sm text-brand-mist placeholder:text-brand-mist/30 focus:border-brand-cyan focus:outline-none"
-                  placeholder="Stage, license, asset coverage, target launch date, anything we should know."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="inline-flex w-full items-center justify-center rounded-md bg-brand-cyan px-5 py-3 text-sm font-medium text-brand-ink transition-all hover:bg-brand-cyan/90 hover:shadow-glow-cyan"
-              >
-                Send message
-              </button>
-
-              <p className="text-xs text-brand-mist/45">
-                By submitting, you agree to be contacted by GIORAPTOR about your
-                enquiry. We don&apos;t share contact details with third parties.
-              </p>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
     </>
-  );
-}
-
-function Field({
-  label,
-  name,
-  type = 'text',
-  required = false
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  required?: boolean;
-}) {
-  return (
-    <div>
-      <label className="block text-xs uppercase tracking-[0.18em] text-brand-mist/60">
-        {label}
-        {required && <span className="text-brand-cyan"> *</span>}
-      </label>
-      <input
-        type={type}
-        name={name}
-        required={required}
-        className="mt-2 w-full rounded-md border border-white/10 bg-white/[0.02] px-3.5 py-2.5 text-sm text-brand-mist placeholder:text-brand-mist/30 focus:border-brand-cyan focus:outline-none"
-      />
-    </div>
   );
 }
