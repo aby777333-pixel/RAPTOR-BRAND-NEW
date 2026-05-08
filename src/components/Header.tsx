@@ -10,7 +10,7 @@ const NAV_LINKS = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-brand-ink/70 backdrop-blur-xl">
-      <div className="container-page flex h-16 items-center justify-between">
+      <div className="container-page flex h-20 items-center justify-between">
         <Logo />
         <nav className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
