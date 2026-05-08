@@ -67,9 +67,16 @@ export default function ContactPage() {
               className="surface-card grid gap-5 p-7 md:p-9"
               method="POST"
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
               name="contact"
+              action="/contact/?success=1"
             >
               <input type="hidden" name="form-name" value="contact" />
+              <p className="hidden">
+                <label>
+                  Don&apos;t fill this out: <input name="bot-field" />
+                </label>
+              </p>
 
               <div className="grid gap-5 md:grid-cols-2">
                 <Field label="Full name" name="name" required />
