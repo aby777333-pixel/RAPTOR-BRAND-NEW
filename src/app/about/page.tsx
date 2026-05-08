@@ -38,7 +38,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="border-b border-white/5">
-        <div className="container-page py-20 md:py-28">
+        <div className="container-page py-14 md:py-20">
           <span className="text-xs uppercase tracking-[0.22em] text-brand-cyan">
             About
           </span>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             <span className="text-gradient-brand">next generation</span> of
             brokers.
           </h1>
-          <p className="mt-6 max-w-3xl text-brand-mist/75 leading-relaxed text-lg">
+          <p className="mt-5 max-w-3xl text-brand-mist/75 leading-relaxed text-lg">
             GIORAPTOR is a forex broker technology provider. We build the
             platforms, dealing systems, CRMs, portals, and websites that brokers
             run their businesses on — engineered to institutional standards and
@@ -56,8 +56,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-page py-20">
-        <div className="grid gap-12 md:grid-cols-2">
+      <section className="container-page py-14 md:py-16">
+        <div className="grid gap-10 md:grid-cols-2">
           <div>
             <h2 className="font-display text-3xl tracking-tight md:text-4xl">
               Our position in the market
@@ -91,14 +91,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-page py-20">
+      <section className="container-page py-14 md:py-16">
         <span className="text-xs uppercase tracking-[0.22em] text-brand-gold-light">
           Principles
         </span>
         <h2 className="mt-3 font-display text-3xl tracking-tight md:text-5xl">
           How we build.
         </h2>
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
           {PRINCIPLES.map((p) => (
             <article key={p.title} className="surface-card p-7">
               <h3 className="font-display text-xl text-white">{p.title}</h3>

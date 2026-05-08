@@ -29,7 +29,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="border-b border-white/5">
-        <div className="container-page py-20 md:py-28">
+        <div className="container-page py-14 md:py-20">
           <span className="text-xs uppercase tracking-[0.22em] text-brand-cyan">
             Contact
           </span>
@@ -37,20 +37,20 @@ export default function ContactPage() {
             Let&apos;s talk about your{' '}
             <span className="text-gradient-brand">brokerage</span>.
           </h1>
-          <p className="mt-6 max-w-2xl text-brand-mist/75 leading-relaxed text-lg">
+          <p className="mt-5 max-w-2xl text-brand-mist/75 leading-relaxed text-lg">
             Tell us where you are — pre-launch, mid-migration, or scaling — and
             we&apos;ll respond within one business day with the right next step.
           </p>
         </div>
       </section>
 
-      <section className="container-page py-20">
-        <div className="grid gap-12 lg:grid-cols-12">
+      <section className="container-page py-14 md:py-16">
+        <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <h2 className="font-display text-2xl tracking-tight md:text-3xl">
               What can we help you with?
             </h2>
-            <ul className="mt-8 space-y-5">
+            <ul className="mt-7 space-y-4">
               {REASONS.map((r) => (
                 <li key={r.title} className="surface-card p-5">
                   <h3 className="font-medium text-white">{r.title}</h3>

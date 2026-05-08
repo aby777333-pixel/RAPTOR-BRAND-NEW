@@ -12,14 +12,14 @@ export default function ProductsPage() {
   return (
     <>
       <section className="border-b border-white/5">
-        <div className="container-page py-20 md:py-28">
+        <div className="container-page py-14 md:py-20">
           <span className="text-xs uppercase tracking-[0.22em] text-brand-cyan">
             Products
           </span>
           <h1 className="mt-3 font-display text-4xl tracking-tight md:text-6xl">
             The full <span className="text-gradient-brand">brokerage stack</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-brand-mist/75 leading-relaxed text-lg">
+          <p className="mt-5 max-w-2xl text-brand-mist/75 leading-relaxed text-lg">
             Eight production-ready modules. Run them as a complete platform or
             mix into an existing setup. Every module is white-label, multi-asset,
             and built around how real desks operate.
@@ -27,13 +27,13 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="container-page py-20">
-        <div className="space-y-20">
+      <section className="container-page py-14 md:py-16">
+        <div className="space-y-14">
           {PRODUCTS.map((p, idx) => (
             <article
               key={p.slug}
               id={p.slug}
-              className="grid scroll-mt-24 gap-10 md:grid-cols-12 md:items-start"
+              className="grid scroll-mt-24 gap-8 md:grid-cols-12 md:items-start"
             >
               <div className="md:col-span-5">
                 <span
@@ -48,7 +48,7 @@ export default function ProductsPage() {
                 <h2 className="mt-3 font-display text-3xl tracking-tight md:text-4xl">
                   {p.title}
                 </h2>
-                <p className="mt-5 text-brand-mist/70 leading-relaxed">
+                <p className="mt-4 text-brand-mist/70 leading-relaxed">
                   {p.summary}
                 </p>
               </div>
@@ -57,7 +57,7 @@ export default function ProductsPage() {
                   <h3 className="text-xs uppercase tracking-[0.22em] text-brand-mist/50">
                     What you get
                   </h3>
-                  <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                     {p.features.map((f) => (
                       <li
                         key={f}

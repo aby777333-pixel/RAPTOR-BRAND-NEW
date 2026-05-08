@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="container-page py-24">
+      <section className="container-page py-14 md:py-20">
         <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <span className="text-xs uppercase tracking-[0.22em] text-brand-cyan">
@@ -29,13 +29,13 @@ export default function HomePage() {
             View all →
           </Link>
         </div>
-        <div className="mt-12">
+        <div className="mt-10">
           <ProductGrid />
         </div>
       </section>
 
-      <section className="container-page py-24">
-        <div className="grid gap-12 md:grid-cols-2 md:items-center">
+      <section className="container-page py-14 md:py-20">
+        <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
             <span className="text-xs uppercase tracking-[0.22em] text-brand-gold-light">
               Why GIORAPTOR
@@ -49,7 +49,7 @@ export default function HomePage() {
               the questions a dealer, risk manager, or compliance officer asks
               at 9:31 AM on a Monday — and answered before they have to.
             </p>
-            <ul className="mt-8 space-y-4">
+            <ul className="mt-7 space-y-4">
               {WHY.map((item) => (
                 <li key={item.title} className="flex gap-4">
                   <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-brand-cyan/15 text-brand-cyan">
@@ -95,7 +95,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="container-page py-24">
+      <section className="container-page py-14 md:py-20">
         <div className="max-w-2xl">
           <span className="text-xs uppercase tracking-[0.22em] text-brand-cyan">
             How we work
@@ -104,7 +104,7 @@ export default function HomePage() {
             From kickoff to live in weeks, not quarters.
           </h2>
         </div>
-        <ol className="mt-12 grid gap-5 md:grid-cols-4">
+        <ol className="mt-10 grid gap-5 md:grid-cols-4">
           {PROCESS.map((step, i) => (
             <li key={step.title} className="surface-card p-6">
               <div className="flex items-center gap-3">

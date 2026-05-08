@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Cta() {
   return (
-    <section className="container-page py-24">
-      <div className="surface-card relative overflow-hidden p-10 md:p-14">
+    <section className="container-page py-14 md:py-20">
+      <div className="surface-card relative overflow-hidden p-9 md:p-12">
         <div
           className="absolute -top-32 -right-32 h-72 w-72 rounded-full bg-brand-cyan/15 blur-3xl"
           aria-hidden
@@ -21,7 +21,7 @@ export default function Cta() {
             where you are, and we&apos;ll show you what GIORAPTOR can ship for
             your desk.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-wrap gap-3">
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 rounded-md bg-brand-cyan px-5 py-3 text-sm font-medium text-brand-ink transition-all hover:bg-brand-cyan/90 hover:shadow-glow-cyan"

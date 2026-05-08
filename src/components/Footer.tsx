@@ -19,9 +19,9 @@ const COMPANY = [
 
 export default function Footer() {
   return (
-    <footer className="mt-24 border-t border-white/5 bg-brand-ink-soft">
-      <div className="container-page py-14">
-        <div className="grid gap-10 md:grid-cols-4">
+    <footer className="mt-16 border-t border-white/5 bg-brand-ink-soft">
+      <div className="container-page py-10 md:py-12">
+        <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <Logo />
             <p className="mt-5 max-w-md text-sm text-brand-mist/60 leading-relaxed">
@@ -76,7 +76,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/5 pt-6 md:flex-row md:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-white/5 pt-5 md:flex-row md:items-center">
           <p className="text-xs text-brand-mist/50">
             © {new Date().getFullYear()} GIORAPTOR. All rights reserved.
           </p>
